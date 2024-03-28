@@ -30,7 +30,7 @@ const fs = require('fs');
   }
 
   const jsonData = JSON.stringify(people);
-fs.writeFile('people.txt', jsonData, err => {
+fs.writeFile('people.json', jsonData, err => {
   if (err) throw err;
   console.log('The file has been saved!');
 });
